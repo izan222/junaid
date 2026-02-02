@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gourmet Delights</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">Gourmet Delights</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+      <h1>Welcome to Gourmet Delights</h1>
+      <p>Experience the taste of luxury</p>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+      <h2>Our Menu</h2>
+
+      <div class="menu-container">
+        <div class="menu-item">
+          <img src="pizza.jpg" alt="Pizza" />
+          <h3>Pizza</h3>
+          <p>Cheesy and delicious pizza</p>
+          <button onclick="orderFood('Pizza')">Order Now</button>
+        </div>
+
+        <div class="menu-item">
+          <img src="pasta.jpg" alt="Pasta" />
+          <h3>Pasta</h3>
+          <p>Creamy Italian pasta</p>
+          <button onclick="orderFood('Pasta')">Order Now</button>
+        </div>
+
+        <div class="menu-item">
+          <img src="dessert.jpg" alt="Dessert" />
+          <h3>Dessert</h3>
+          <p>Sweet and tasty dessert</p>
+          <button onclick="orderFood('Dessert')">Order Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2>About Us</h2>
+      <p>
+        Gourmet Delights is a premium restaurant serving high-quality food with
+        exceptional taste and service.
+      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" />
+        <input type="email" id="email" placeholder="Your Email" />
+        <textarea id="message" placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2026 Gourmet Delights</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
