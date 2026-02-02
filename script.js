@@ -1,35 +1,19 @@
-// Smooth scrolling
-document.querySelectorAll(".nav-links a").forEach((link) => {
-  link.addEventListener("click", function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute("href"));
-    target.scrollIntoView({ behavior: "smooth" });
-  });
-});
-
-// Navbar color change on scroll
-window.addEventListener("scroll", () => {
-  const navbar = document.querySelector(".navbar");
-  navbar.style.background = window.scrollY > 50 ? "#000" : "#333";
-});
-
-// Order button alert
-function orderFood(item) {
-  alert("Your order for " + item + " has been placed!");
+// Function to handle food orders
+function orderFood(itemName) {
+    alert(`Thank you for choosing Gourmet Delights! Your order for ${itemName} has been received.`);
 }
 
-// Contact form validation
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-  e.preventDefault();
+// Handle Contact Form Submission
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevents the page from refreshing
 
-  const name = document.getElementById("name").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const message = document.getElementById("message").value.trim();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
 
-  if (name === "" || email === "" || message === "") {
-    alert("Please fill all fields");
-  } else {
-    alert("Message sent successfully!");
-    this.reset();
-  }
+    if (name && email) {
+        alert(`Thank you, ${name}! Your message has been sent successfully. We will contact you at ${email} shortly.`);
+        this.reset(); // Clear the form
+    } else {
+        alert("Please fill in all required fields.");
+    }
 });
