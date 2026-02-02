@@ -1,79 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gourmet Delights | Luxury Dining</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gourmet Delights</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
     <nav class="navbar">
-        <div class="logo">Gourmet <span>Delights</span></div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+      <div class="logo">Gourmet Delights</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
 
+    <!-- Home Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Welcome to Gourmet Delights</h1>
-            <p>Experience the taste of luxury in every bite.</p>
-            <a href="#menu" class="btn">View Menu</a>
-        </div>
+      <h1>Welcome to Gourmet Delights</h1>
+      <p>Experience the taste of luxury</p>
     </section>
 
+    <!-- Menu Section -->
     <section id="menu" class="menu">
-        <h2 class="section-title">Our Signature Dishes</h2>
-        <div class="menu-container">
-            <div class="menu-item">
-                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=800" alt="Gourmet Pizza">
-                <h3>Truffle Pizza</h3>
-                <p>Hand-tossed dough with black truffle oil and fresh mozzarella.</p>
-                <button onclick="orderFood('Truffle Pizza')">Order Now</button>
-            </div>
+      <h2>Our Menu</h2>
 
-            <div class="menu-item">
-                <img src="https://images.unsplash.com/photo-1473093226795-af9932fe5856?auto=format&fit=crop&q=80&w=800" alt="Creamy Pasta">
-                <h3>Pesto Pasta</h3>
-                <p>Creamy basil pesto made with aged parmesan and toasted pine nuts.</p>
-                <button onclick="orderFood('Pesto Pasta')">Order Now</button>
-            </div>
-
-            <div class="menu-item">
-                <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&q=80&w=800" alt="Chocolate Dessert">
-                <h3>Chocolate Lava</h3>
-                <p>Warm molten cake served with organic vanilla bean gelato.</p>
-                <button onclick="orderFood('Chocolate Lava')">Order Now</button>
-            </div>
+      <div class="menu-container">
+        <div class="menu-item">
+          <img src="pizza.jpg" alt="Pizza" />
+          <h3>Pizza</h3>
+          <p>Cheesy and delicious pizza</p>
+          <button onclick="orderFood('Pizza')">Order Now</button>
         </div>
+
+        <div class="menu-item">
+          <img src="pasta.jpg" alt="Pasta" />
+          <h3>Pasta</h3>
+          <p>Creamy Italian pasta</p>
+          <button onclick="orderFood('Pasta')">Order Now</button>
+        </div>
+
+        <div class="menu-item">
+          <img src="dessert.jpg" alt="Dessert" />
+          <h3>Dessert</h3>
+          <p>Sweet and tasty dessert</p>
+          <button onclick="orderFood('Dessert')">Order Now</button>
+        </div>
+      </div>
     </section>
 
+    <!-- About Section -->
     <section id="about" class="about">
-        <div class="about-content">
-            <h2>Our Story</h2>
-            <p>Founded in 2026, Gourmet Delights has been committed to the art of fine dining. We source our ingredients from local organic farms to ensure every plate tells a story of quality and passion.</p>
-        </div>
+      <h2>About Us</h2>
+      <p>
+        Gourmet Delights is a premium restaurant serving high-quality food with
+        exceptional taste and service.
+      </p>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="contact">
-        <h2>Reserve a Table</h2>
-        <form id="contactForm">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" placeholder="Special Requests" rows="5"></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
+      <h2>Contact Us</h2>
+
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" />
+        <input type="email" id="email" placeholder="Your Email" />
+        <textarea id="message" placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
     </section>
 
     <footer>
-        <p>&copy; 2026 Gourmet Delights. Crafted for Connoisseurs.</p>
+      <p>© 2026 Gourmet Delights</p>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
